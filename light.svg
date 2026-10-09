@@ -12,7 +12,7 @@
 
     <!-- Panel Gradients -->
     <linearGradient id="lightPanelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96"/>
       <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.98"/>
     </linearGradient>
 
@@ -31,6 +31,16 @@
       <stop offset="0%" stop-color="#059669"/>
       <stop offset="100%" stop-color="#0d9488"/>
     </linearGradient>
+
+    <!-- Subtle Restrained Grid Pattern (Light) -->
+    <pattern id="gridPatternLight" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#cbd5e1" stroke-width="0.75" stroke-opacity="0.45"/>
+    </pattern>
+
+    <!-- Subtle Scanlines Pattern (Light) -->
+    <pattern id="scanlinesLight" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#94a3b8" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
   </defs>
 
   <style>
@@ -55,7 +65,7 @@
     }
     .pulse-dot-light {
       animation: statusPulseLight 2.4s ease-in-out infinite;
-      transform-origin: 1042px 24px;
+      transform-origin: 1014px 24.5px;
     }
 
     @keyframes dataFlowLight {
@@ -107,21 +117,25 @@
     <text x="432" y="81" fill="#0369a1" font-size="9" class="font-mono" font-weight="700">MERN_ENV</text>
 
     <!-- Terminal Transcript -->
-    <g transform="translate(38, 116)" class="font-mono">
-      <!-- Line 1 -->
+    <g transform="translate(38, 115)" class="font-mono">
+      <!-- Line 1: Identity -->
       <text x="0" y="0" fill="#475569" font-size="11.5">$ <tspan fill="#0284c7">whoami</tspan></text>
-      <text x="0" y="19" fill="#0f172a" font-size="12" font-weight="700">Rizwan Khan <tspan fill="#64748b" font-weight="500">(@Rijvan26)</tspan></text>
+      <text x="0" y="18" fill="#0f172a" font-size="12" font-weight="700">Rizwan Khan <tspan fill="#64748b" font-weight="500">(@Rijvan26)</tspan></text>
 
-      <!-- Line 2 -->
-      <text x="0" y="44" fill="#475569" font-size="11.5">$ <tspan fill="#0284c7">cat</tspan> role.config</text>
-      <text x="0" y="63" fill="#1e293b" font-size="11.5" font-weight="600">MERN Stack and Full-Stack Developer</text>
-      <text x="0" y="79" fill="#64748b" font-size="10.5">Specializing in REST APIs, Real-time and AI Integration</text>
+      <!-- Line 2: Role & Tagline -->
+      <text x="0" y="42" fill="#475569" font-size="11.5">$ <tspan fill="#0284c7">cat</tspan> role.config</text>
+      <text x="0" y="60" fill="#1e293b" font-size="11.5" font-weight="600">MERN Stack and Full-Stack Developer</text>
+      <text x="0" y="76" fill="#0284c7" font-size="10.5">Tagline: "Architecting scalable web software from frontend to database"</text>
     </g>
 
-    <!-- Visual Architecture / Topology Map -->
-    <g transform="translate(38, 222)">
+    <!-- Visual Architecture / Topology Map with Grid and Scanlines -->
+    <g transform="translate(38, 218)">
       <!-- Map Container Box -->
-      <rect x="0" y="0" width="452" height="226" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <rect x="0" y="0" width="452" height="232" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Restrained Grid Background -->
+      <rect x="0" y="26" width="452" height="206" fill="url(#gridPatternLight)"/>
+      <!-- Subtle Scanlines Overlay -->
+      <rect x="0" y="26" width="452" height="206" fill="url(#scanlinesLight)" pointer-events="none"/>
       
       <!-- Box Header -->
       <rect x="0" y="0" width="452" height="26" rx="8" fill="#f1f5f9"/>
@@ -131,57 +145,57 @@
 
       <!-- Tier 1: Client Layer -->
       <g transform="translate(14, 38)">
-        <rect x="0" y="0" width="124" height="64" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.2"/>
+        <rect x="0" y="0" width="124" height="66" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.2"/>
         <text x="10" y="16" fill="#0284c7" font-size="9" class="font-mono" font-weight="700">CLIENT LAYER</text>
-        <text x="10" y="32" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">React 19 / Vite</text>
-        <text x="10" y="46" fill="#475569" font-size="9" class="font-sans">Redux Toolkit / RTK</text>
-        <text x="10" y="58" fill="#64748b" font-size="8.5" class="font-mono">Tailwind CSS v4</text>
+        <text x="10" y="33" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">React 19 / Vite</text>
+        <text x="10" y="47" fill="#475569" font-size="9" class="font-sans">Redux Toolkit / RTK</text>
+        <text x="10" y="59" fill="#64748b" font-size="8.5" class="font-mono">Tailwind CSS v4</text>
       </g>
 
       <!-- Connection 1 -> 2 -->
-      <line x1="138" y1="70" x2="162" y2="70" stroke="#0284c7" stroke-width="1.5" class="flow-line-light"/>
-      <polygon points="163,70 159,67 159,73" fill="#0284c7"/>
+      <line x1="138" y1="71" x2="162" y2="71" stroke="#0284c7" stroke-width="1.5" class="flow-line-light"/>
+      <polygon points="163,71 159,68 159,74" fill="#0284c7"/>
 
       <!-- Tier 2: Server API & Realtime Layer -->
       <g transform="translate(164, 38)">
-        <rect x="0" y="0" width="124" height="64" rx="6" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.2"/>
+        <rect x="0" y="0" width="124" height="66" rx="6" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.2"/>
         <text x="10" y="16" fill="#4f46e5" font-size="9" class="font-mono" font-weight="700">API and REALTIME</text>
-        <text x="10" y="32" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">Express 5 / Node</text>
-        <text x="10" y="46" fill="#475569" font-size="9" class="font-sans">Socket.IO WebSockets</text>
-        <text x="10" y="58" fill="#64748b" font-size="8.5" class="font-mono">JWT and Auth Guard</text>
+        <text x="10" y="33" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">Express 5 / Node</text>
+        <text x="10" y="47" fill="#475569" font-size="9" class="font-sans">Socket.IO WebSockets</text>
+        <text x="10" y="59" fill="#64748b" font-size="8.5" class="font-mono">JWT and Auth Guard</text>
       </g>
 
       <!-- Connection 2 -> 3 -->
-      <line x1="288" y1="70" x2="312" y2="70" stroke="#4f46e5" stroke-width="1.5" class="flow-line-light"/>
-      <polygon points="313,70 309,67 309,73" fill="#4f46e5"/>
+      <line x1="288" y1="71" x2="312" y2="71" stroke="#4f46e5" stroke-width="1.5" class="flow-line-light"/>
+      <polygon points="313,71 309,68 309,74" fill="#4f46e5"/>
 
       <!-- Tier 3: External & AI Services -->
       <g transform="translate(314, 38)">
-        <rect x="0" y="0" width="124" height="64" rx="6" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.2"/>
+        <rect x="0" y="0" width="124" height="66" rx="6" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.2"/>
         <text x="10" y="16" fill="#7e22ce" font-size="9" class="font-mono" font-weight="700">AI and ENGINE</text>
-        <text x="10" y="32" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">Gemini 2.5 / LLM</text>
-        <text x="10" y="46" fill="#475569" font-size="9" class="font-sans">LangChain Reasoning</text>
-        <text x="10" y="58" fill="#64748b" font-size="8.5" class="font-mono">SearXNG Search API</text>
+        <text x="10" y="33" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">Gemini 2.5 / LLM</text>
+        <text x="10" y="47" fill="#475569" font-size="9" class="font-sans">LangChain Reasoning</text>
+        <text x="10" y="59" fill="#64748b" font-size="8.5" class="font-mono">SearXNG Search API</text>
       </g>
 
       <!-- Vertical Feeders to Storage -->
-      <path d="M 226 102 L 226 122 L 130 122 L 130 134" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
-      <polygon points="130,135 127,131 133,131" fill="#cbd5e1"/>
+      <path d="M 226 104 L 226 124 L 130 124 L 130 136" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+      <polygon points="130,137 127,133 133,133" fill="#cbd5e1"/>
 
-      <path d="M 226 102 L 226 122 L 322 122 L 322 134" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
-      <polygon points="322,135 319,131 325,131" fill="#cbd5e1"/>
+      <path d="M 226 104 L 226 124 L 322 124 L 322 136" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+      <polygon points="322,137 319,133 325,133" fill="#cbd5e1"/>
 
       <!-- Bottom Tier: Database & Infrastructure -->
-      <g transform="translate(14, 136)">
-        <rect x="0" y="0" width="204" height="74" rx="6" fill="#ffffff" stroke="#a7f3d0" stroke-width="1.2"/>
+      <g transform="translate(14, 138)">
+        <rect x="0" y="0" width="204" height="76" rx="6" fill="#ffffff" stroke="#a7f3d0" stroke-width="1.2"/>
         <text x="10" y="16" fill="#059669" font-size="9" class="font-mono" font-weight="700">PERSISTENCE LAYER</text>
         <text x="10" y="33" fill="#0f172a" font-size="11" class="font-sans" font-weight="700">MongoDB and Mongoose</text>
-        <text x="10" y="49" fill="#475569" font-size="9.5" class="font-sans">Aggregations · Indexing · Transactions</text>
-        <text x="10" y="63" fill="#64748b" font-size="8.5" class="font-mono">Role-Based Access Control Schema</text>
+        <text x="10" y="49" fill="#475569" font-size="9.5" class="font-sans">Aggregations · Indexing · Pipelines</text>
+        <text x="10" y="63" fill="#64748b" font-size="8.5" class="font-mono">Secure Schema and Role Access</text>
       </g>
 
-      <g transform="translate(234, 136)">
-        <rect x="0" y="0" width="204" height="74" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.2"/>
+      <g transform="translate(234, 138)">
+        <rect x="0" y="0" width="204" height="76" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.2"/>
         <text x="10" y="16" fill="#0284c7" font-size="9" class="font-mono" font-weight="700">DEV and CLOUD INFRA</text>
         <text x="10" y="33" fill="#0f172a" font-size="11" class="font-sans" font-weight="700">Docker and Self-Hosted Hub</text>
         <text x="10" y="49" fill="#475569" font-size="9.5" class="font-sans">Razorpay Payments · ImageKit CDN</text>
@@ -190,7 +204,7 @@
     </g>
 
     <!-- Bottom Terminal Active State -->
-    <g transform="translate(38, 478)" class="font-mono">
+    <g transform="translate(38, 482)" class="font-mono">
       <text x="0" y="0" fill="#475569" font-size="11">$ <tspan fill="#0284c7">uptime</tspan> --engineering</text>
       <text x="0" y="17" fill="#059669" font-size="11">● active (building and learning) · ready for production</text>
       
