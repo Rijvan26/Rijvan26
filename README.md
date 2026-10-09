@@ -15,6 +15,24 @@
 
 </div>
 
+## Projects
+
+<div align="center">
+
+<a href="https://github.com/Rijvan26/react-framework"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-1.svg"><img src="./cards/project-1-light.svg" alt="react-framework" width="412"></picture></a>
+<a href="https://github.com/Rijvan26/kodr4-backend"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-2.svg"><img src="./cards/project-2-light.svg" alt="kodr4-backend" width="412"></picture></a>
+<a href="https://github.com/Rijvan26/Mac-Os-Portfolio"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-3.svg"><img src="./cards/project-3-light.svg" alt="Mac-Os-Portfolio" width="412"></picture></a>
+
+</div>
+
+## Recently pushed
+
+<div align="center">
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="./cards/recent.svg"><img src="./cards/recent-light.svg" alt="Recently pushed repositories of Rijvan26" width="100%"></picture>
+
+</div>
+
 ## Stack
 
 <div align="center">
@@ -28,19 +46,6 @@
 <div align="center">
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="./cards/timeline.svg"><img src="./cards/timeline-light.svg" alt="Timeline of repositories created by Rijvan26" width="100%"></picture>
-
-</div>
-
-## Projects
-
-<div align="center">
-
-<a href="https://github.com/Rijvan26/Rijvan26"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-1.svg"><img src="./cards/project-1-light.svg" alt="Rijvan26" width="412"></picture></a>
-<a href="https://github.com/Rijvan26/kodr4-backend"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-2.svg"><img src="./cards/project-2-light.svg" alt="kodr4-backend" width="412"></picture></a>
-<a href="https://github.com/Rijvan26/react-framework"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-3.svg"><img src="./cards/project-3-light.svg" alt="react-framework" width="412"></picture></a>
-<a href="https://github.com/Rijvan26/Dom-tasks-kodr"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-4.svg"><img src="./cards/project-4-light.svg" alt="Dom-tasks-kodr" width="412"></picture></a>
-<a href="https://github.com/Rijvan26/Supervent"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-5.svg"><img src="./cards/project-5-light.svg" alt="Supervent" width="412"></picture></a>
-<a href="https://github.com/Rijvan26/responsive"><picture><source media="(prefers-color-scheme: dark)" srcset="./cards/project-6.svg"><img src="./cards/project-6-light.svg" alt="responsive" width="412"></picture></a>
 
 </div>
 
