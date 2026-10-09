@@ -1,0 +1,310 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 610" width="100%" height="100%" role="img" aria-labelledby="lightTitle lightDesc">
+  <title id="lightTitle">Rizwan Khan - Full-Stack and MERN Developer Profile Banner</title>
+  <desc id="lightDesc">Technical profile banner showcasing Rizwan Khan's full-stack development skills, verified projects, and system architecture in light theme.</desc>
+
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="lightBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <!-- Panel Gradients -->
+    <linearGradient id="lightPanelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#f8fafc" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="lightCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="lightBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+
+    <linearGradient id="lightEmeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Menlo, Monaco, Consolas, 'Courier New', monospace;
+    }
+    .font-sans {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    
+    @keyframes cursorBlinkLight {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .cursor-light {
+      animation: cursorBlinkLight 1.1s step-start infinite;
+    }
+
+    @keyframes statusPulseLight {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.25); opacity: 0.4; }
+    }
+    .pulse-dot-light {
+      animation: statusPulseLight 2.4s ease-in-out infinite;
+      transform-origin: 1042px 24px;
+    }
+
+    @keyframes dataFlowLight {
+      0% { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .flow-line-light {
+      stroke-dasharray: 4, 4;
+      animation: dataFlowLight 1.6s linear infinite;
+    }
+  </style>
+
+  <!-- Outer Frame -->
+  <rect x="1.5" y="1.5" width="1177" height="607" rx="16" fill="url(#lightBgGrad)" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Top System Header Bar -->
+  <rect x="1.5" y="1.5" width="1177" height="46" rx="16" fill="#ffffff" fill-opacity="0.95"/>
+  <rect x="1.5" y="32" width="1177" height="15.5" fill="#ffffff"/>
+  <line x1="1.5" y1="47.5" x2="1178.5" y2="47.5" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Window Control Buttons -->
+  <circle cx="28" cy="24" r="5" fill="#ef4444" fill-opacity="0.85"/>
+  <circle cx="45" cy="24" r="5" fill="#f59e0b" fill-opacity="0.85"/>
+  <circle cx="62" cy="24" r="5" fill="#10b981" fill-opacity="0.85"/>
+
+  <!-- Header Breadcrumb and Status -->
+  <text x="85" y="28" fill="#475569" font-size="12" class="font-mono" font-weight="600">rijvan26 <tspan fill="#94a3b8">/</tspan> <tspan fill="#0284c7">engineering-profile</tspan> <tspan fill="#94a3b8">·</tspan> <tspan fill="#334155">production-ready</tspan></text>
+
+  <!-- Status Indicator (Right aligned) -->
+  <g>
+    <rect x="1000" y="14" width="156" height="21" rx="10.5" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+    <circle cx="1014" cy="24.5" r="4" fill="#059669"/>
+    <circle cx="1014" cy="24.5" r="7" fill="#059669" fill-opacity="0.25" class="pulse-dot-light"/>
+    <text x="1026" y="28.5" fill="#059669" font-size="10.5" class="font-mono" font-weight="700">STATUS: OPEN TO WORK</text>
+  </g>
+
+  <!-- ================= LEFT COLUMN: TERMINAL and VISUAL.MAP ================= -->
+  <g id="leftColumnLight">
+    <!-- Panel Container -->
+    <rect x="24" y="60" width="480" height="526" rx="12" fill="url(#lightPanelGrad)" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Subheader / Shell Tab -->
+    <path d="M 24 72 A 12 12 0 0 1 36 60 L 492 60 A 12 12 0 0 1 504 72 L 504 94 L 24 94 Z" fill="#f1f5f9"/>
+    <line x1="24" y1="94" x2="504" y2="94" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <rect x="36" y="71" width="10" height="10" rx="2" fill="#e0f2fe" stroke="#0284c7" stroke-width="1"/>
+    <text x="54" y="80" fill="#334155" font-size="11" class="font-mono" font-weight="600">SESSION // VISUAL.MAP</text>
+    <rect x="424" y="69" width="66" height="16" rx="4" fill="#e0f2fe"/>
+    <text x="432" y="81" fill="#0369a1" font-size="9" class="font-mono" font-weight="700">MERN_ENV</text>
+
+    <!-- Terminal Transcript -->
+    <g transform="translate(38, 116)" class="font-mono">
+      <!-- Line 1 -->
+      <text x="0" y="0" fill="#475569" font-size="11.5">$ <tspan fill="#0284c7">whoami</tspan></text>
+      <text x="0" y="19" fill="#0f172a" font-size="12" font-weight="700">Rizwan Khan <tspan fill="#64748b" font-weight="500">(@Rijvan26)</tspan></text>
+
+      <!-- Line 2 -->
+      <text x="0" y="44" fill="#475569" font-size="11.5">$ <tspan fill="#0284c7">cat</tspan> role.config</text>
+      <text x="0" y="63" fill="#1e293b" font-size="11.5" font-weight="600">MERN Stack and Full-Stack Developer</text>
+      <text x="0" y="79" fill="#64748b" font-size="10.5">Specializing in REST APIs, Real-time and AI Integration</text>
+    </g>
+
+    <!-- Visual Architecture / Topology Map -->
+    <g transform="translate(38, 222)">
+      <!-- Map Container Box -->
+      <rect x="0" y="0" width="452" height="226" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      
+      <!-- Box Header -->
+      <rect x="0" y="0" width="452" height="26" rx="8" fill="#f1f5f9"/>
+      <rect x="0" y="18" width="452" height="8" fill="#f1f5f9"/>
+      <line x1="0" y1="26" x2="452" y2="26" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="12" y="17" fill="#475569" font-size="9.5" class="font-mono" font-weight="700">SYSTEM ARCHITECTURE // COMPONENT GRAPH</text>
+
+      <!-- Tier 1: Client Layer -->
+      <g transform="translate(14, 38)">
+        <rect x="0" y="0" width="124" height="64" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.2"/>
+        <text x="10" y="16" fill="#0284c7" font-size="9" class="font-mono" font-weight="700">CLIENT LAYER</text>
+        <text x="10" y="32" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">React 19 / Vite</text>
+        <text x="10" y="46" fill="#475569" font-size="9" class="font-sans">Redux Toolkit / RTK</text>
+        <text x="10" y="58" fill="#64748b" font-size="8.5" class="font-mono">Tailwind CSS v4</text>
+      </g>
+
+      <!-- Connection 1 -> 2 -->
+      <line x1="138" y1="70" x2="162" y2="70" stroke="#0284c7" stroke-width="1.5" class="flow-line-light"/>
+      <polygon points="163,70 159,67 159,73" fill="#0284c7"/>
+
+      <!-- Tier 2: Server API & Realtime Layer -->
+      <g transform="translate(164, 38)">
+        <rect x="0" y="0" width="124" height="64" rx="6" fill="#ffffff" stroke="#c7d2fe" stroke-width="1.2"/>
+        <text x="10" y="16" fill="#4f46e5" font-size="9" class="font-mono" font-weight="700">API and REALTIME</text>
+        <text x="10" y="32" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">Express 5 / Node</text>
+        <text x="10" y="46" fill="#475569" font-size="9" class="font-sans">Socket.IO WebSockets</text>
+        <text x="10" y="58" fill="#64748b" font-size="8.5" class="font-mono">JWT and Auth Guard</text>
+      </g>
+
+      <!-- Connection 2 -> 3 -->
+      <line x1="288" y1="70" x2="312" y2="70" stroke="#4f46e5" stroke-width="1.5" class="flow-line-light"/>
+      <polygon points="313,70 309,67 309,73" fill="#4f46e5"/>
+
+      <!-- Tier 3: External & AI Services -->
+      <g transform="translate(314, 38)">
+        <rect x="0" y="0" width="124" height="64" rx="6" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.2"/>
+        <text x="10" y="16" fill="#7e22ce" font-size="9" class="font-mono" font-weight="700">AI and ENGINE</text>
+        <text x="10" y="32" fill="#0f172a" font-size="10" class="font-sans" font-weight="700">Gemini 2.5 / LLM</text>
+        <text x="10" y="46" fill="#475569" font-size="9" class="font-sans">LangChain Reasoning</text>
+        <text x="10" y="58" fill="#64748b" font-size="8.5" class="font-mono">SearXNG Search API</text>
+      </g>
+
+      <!-- Vertical Feeders to Storage -->
+      <path d="M 226 102 L 226 122 L 130 122 L 130 134" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+      <polygon points="130,135 127,131 133,131" fill="#cbd5e1"/>
+
+      <path d="M 226 102 L 226 122 L 322 122 L 322 134" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+      <polygon points="322,135 319,131 325,131" fill="#cbd5e1"/>
+
+      <!-- Bottom Tier: Database & Infrastructure -->
+      <g transform="translate(14, 136)">
+        <rect x="0" y="0" width="204" height="74" rx="6" fill="#ffffff" stroke="#a7f3d0" stroke-width="1.2"/>
+        <text x="10" y="16" fill="#059669" font-size="9" class="font-mono" font-weight="700">PERSISTENCE LAYER</text>
+        <text x="10" y="33" fill="#0f172a" font-size="11" class="font-sans" font-weight="700">MongoDB and Mongoose</text>
+        <text x="10" y="49" fill="#475569" font-size="9.5" class="font-sans">Aggregations · Indexing · Transactions</text>
+        <text x="10" y="63" fill="#64748b" font-size="8.5" class="font-mono">Role-Based Access Control Schema</text>
+      </g>
+
+      <g transform="translate(234, 136)">
+        <rect x="0" y="0" width="204" height="74" rx="6" fill="#ffffff" stroke="#93c5fd" stroke-width="1.2"/>
+        <text x="10" y="16" fill="#0284c7" font-size="9" class="font-mono" font-weight="700">DEV and CLOUD INFRA</text>
+        <text x="10" y="33" fill="#0f172a" font-size="11" class="font-sans" font-weight="700">Docker and Self-Hosted Hub</text>
+        <text x="10" y="49" fill="#475569" font-size="9.5" class="font-sans">Razorpay Payments · ImageKit CDN</text>
+        <text x="10" y="63" fill="#64748b" font-size="8.5" class="font-mono">Git Flow · Vercel · REST Testing</text>
+      </g>
+    </g>
+
+    <!-- Bottom Terminal Active State -->
+    <g transform="translate(38, 478)" class="font-mono">
+      <text x="0" y="0" fill="#475569" font-size="11">$ <tspan fill="#0284c7">uptime</tspan> --engineering</text>
+      <text x="0" y="17" fill="#059669" font-size="11">● active (building and learning) · ready for production</text>
+      
+      <!-- Prompt Line with Blinking Cursor -->
+      <text x="0" y="38" fill="#475569" font-size="11.5">rijvan@dev:~$ <tspan fill="#0f172a">git commit -m "build scalable web apps"</tspan></text>
+      <rect x="376" y="27" width="7.5" height="13" fill="#0284c7" class="cursor-light"/>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: SYSTEM.INFO ================= -->
+  <g id="rightColumnLight">
+    <!-- Panel Container -->
+    <rect x="520" y="60" width="636" height="526" rx="12" fill="url(#lightPanelGrad)" stroke="#cbd5e1" stroke-width="1"/>
+
+    <!-- Right Header Area -->
+    <g transform="translate(544, 88)">
+      <!-- System Tag -->
+      <rect x="0" y="0" width="138" height="19" rx="4" fill="#e0f2fe" stroke="#bae6fd" stroke-width="1"/>
+      <text x="8" y="13" fill="#0369a1" font-size="9.5" class="font-mono" font-weight="700">SPECIFICATION // ID: 26</text>
+
+      <!-- Developer Name -->
+      <text x="0" y="45" fill="#0f172a" font-size="28" class="font-sans" font-weight="800" letter-spacing="-0.5">RIZWAN KHAN</text>
+      
+      <!-- Sub-headline -->
+      <text x="0" y="68" fill="url(#lightBlueGrad)" font-size="14.5" class="font-sans" font-weight="700">Full-Stack / MERN Developer · Clean Web Architect</text>
+      
+      <!-- Factual Bio -->
+      <text x="0" y="89" fill="#475569" font-size="11.5" class="font-sans">Focused on building responsive, high-performance web applications with modular architecture,</text>
+      <text x="0" y="105" fill="#475569" font-size="11.5" class="font-sans">secure JWT authentication, real-time WebSockets, and structured API integrations.</text>
+    </g>
+
+    <!-- Tech Competency Matrix (4 Tiles) -->
+    <g transform="translate(544, 212)">
+      <!-- Tile 1: Frontend -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="288" height="66" rx="8" fill="url(#lightCardGrad)" stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="0" y1="0" x2="3" y2="66" stroke="#0284c7" stroke-width="3"/>
+        <text x="14" y="18" fill="#0284c7" font-size="9.5" class="font-mono" font-weight="700">01 / FRONTEND ENGINEERING</text>
+        <text x="14" y="36" fill="#0f172a" font-size="12" class="font-sans" font-weight="700">React 19, JavaScript (ES6+), TypeScript</text>
+        <text x="14" y="52" fill="#475569" font-size="10" class="font-sans">Redux Toolkit, RTK Query, Tailwind CSS, Vite</text>
+      </g>
+
+      <!-- Tile 2: Backend -->
+      <g transform="translate(300, 0)">
+        <rect x="0" y="0" width="288" height="66" rx="8" fill="url(#lightCardGrad)" stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="0" y1="0" x2="3" y2="66" stroke="#4f46e5" stroke-width="3"/>
+        <text x="14" y="18" fill="#4f46e5" font-size="9.5" class="font-mono" font-weight="700">02 / BACKEND and REALTIME</text>
+        <text x="14" y="36" fill="#0f172a" font-size="12" class="font-sans" font-weight="700">Node.js, Express.js 5, Socket.IO</text>
+        <text x="14" y="52" fill="#475569" font-size="10" class="font-sans">RESTful APIs, JWT Auth and Cookies, MVC/DAO</text>
+      </g>
+
+      <!-- Tile 3: Database & Schemas -->
+      <g transform="translate(0, 74)">
+        <rect x="0" y="0" width="288" height="66" rx="8" fill="url(#lightCardGrad)" stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="0" y1="0" x2="3" y2="66" stroke="#059669" stroke-width="3"/>
+        <text x="14" y="18" fill="#059669" font-size="9.5" class="font-mono" font-weight="700">03 / DATA and STORAGE</text>
+        <text x="14" y="36" fill="#0f172a" font-size="12" class="font-sans" font-weight="700">MongoDB, Mongoose ODM</text>
+        <text x="14" y="52" fill="#475569" font-size="10" class="font-sans">Aggregation Pipelines, Indexing, Modeling</text>
+      </g>
+
+      <!-- Tile 4: Applied AI & Tools -->
+      <g transform="translate(300, 74)">
+        <rect x="0" y="0" width="288" height="66" rx="8" fill="url(#lightCardGrad)" stroke="#cbd5e1" stroke-width="1"/>
+        <line x1="0" y1="0" x2="3" y2="66" stroke="#c026d3" stroke-width="3"/>
+        <text x="14" y="18" fill="#c026d3" font-size="9.5" class="font-mono" font-weight="700">04 / APPLIED AI and SYSTEMS</text>
+        <text x="14" y="36" fill="#0f172a" font-size="12" class="font-sans" font-weight="700">Gemini API, SearXNG, Docker</text>
+        <text x="14" y="52" fill="#475569" font-size="10" class="font-sans">Razorpay Payments, LangChain, Git and Postman</text>
+      </g>
+    </g>
+
+    <!-- Verified Engineering Projects Section -->
+    <g transform="translate(544, 370)">
+      <text x="0" y="0" fill="#475569" font-size="10" class="font-mono" font-weight="700">FEATURED VERIFIED PROJECTS // CODEBASE BENCHMARK</text>
+
+      <!-- Project 1: Intellexx AI -->
+      <g transform="translate(0, 10)">
+        <rect x="0" y="0" width="588" height="50" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="14" y="21" fill="#0f172a" font-size="12" class="font-sans" font-weight="700">Intellexx AI</text>
+        <rect x="94" y="10" width="112" height="15" rx="3" fill="#f3e8ff"/>
+        <text x="100" y="21" fill="#7e22ce" font-size="8.5" class="font-mono" font-weight="700">AI Search Assistant</text>
+        <text x="14" y="39" fill="#475569" font-size="10" class="font-sans">Perplexity-inspired query engine combining Gemini reasoning with live search and secure JWT auth.</text>
+        <text x="510" y="21" fill="#0284c7" font-size="9" class="font-mono" font-weight="600">React · Node</text>
+      </g>
+
+      <!-- Project 2: Buy Me a Coffee -->
+      <g transform="translate(0, 68)">
+        <rect x="0" y="0" width="588" height="50" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="14" y="21" fill="#0f172a" font-size="12" class="font-sans" font-weight="700">Buy Me a Coffee</text>
+        <rect x="126" y="10" width="114" height="15" rx="3" fill="#dcfce7"/>
+        <text x="132" y="21" fill="#15803d" font-size="8.5" class="font-mono" font-weight="700">Payment Gateway</text>
+        <text x="14" y="39" fill="#475569" font-size="10" class="font-sans">Full-stack platform integrating Razorpay SDK, order verification, TypeScript and Redux state.</text>
+        <text x="496" y="21" fill="#0284c7" font-size="9" class="font-mono" font-weight="600">TS · Razorpay</text>
+      </g>
+
+      <!-- Project 3: Snitch Platform -->
+      <g transform="translate(0, 126)">
+        <rect x="0" y="0" width="588" height="50" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="14" y="21" fill="#0f172a" font-size="12" class="font-sans" font-weight="700">Snitch E-Commerce</text>
+        <rect x="144" y="10" width="112" height="15" rx="3" fill="#e0f2fe"/>
+        <text x="150" y="21" fill="#0369a1" font-size="8.5" class="font-mono" font-weight="700">Full-Stack Store</text>
+        <text x="14" y="39" fill="#475569" font-size="10" class="font-sans">Modular e-commerce with React 19, Multer file handling, ImageKit CDN and Express 5 backend.</text>
+        <text x="494" y="21" fill="#0284c7" font-size="9" class="font-mono" font-weight="600">React 19 · MERN</text>
+      </g>
+    </g>
+
+    <!-- Verified Links Bar -->
+    <g transform="translate(544, 560)">
+      <line x1="0" y1="-8" x2="588" y2="-8" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="0" y="7" fill="#64748b" font-size="10" class="font-mono">VERIFIED LINKS:</text>
+      <text x="100" y="7" fill="#0284c7" font-size="10" class="font-mono" font-weight="600">github.com/Rijvan26</text>
+      <text x="250" y="7" fill="#94a3b8" font-size="10" class="font-mono">|</text>
+      <text x="264" y="7" fill="#4f46e5" font-size="10" class="font-mono" font-weight="600">discord.gg/Rijvan26</text>
+      <text x="410" y="7" fill="#94a3b8" font-size="10" class="font-mono">|</text>
+      <text x="424" y="7" fill="#475569" font-size="10" class="font-mono" font-weight="600">Indore, MP, India</text>
+    </g>
+  </g>
+</svg>
